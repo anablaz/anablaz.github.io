@@ -45,8 +45,13 @@ body {
 }
 
 .socialmedia li a:link, .socialmedia li a:visited {
+    display: inline-block;
     color: rgb(158, 152, 152);
     text-decoration: none;
+}
+
+.socialmedia li a:hover {
+    transform: scale(1.1);
 }
 
 .downthepage {
@@ -68,3 +73,70 @@ body {
 .downthepage:hover i {
     margin-top: 0.1em;
 }
+
+
+
+
+.aboutme {
+    height: 100vh;
+    padding-left: 0;
+    background-color: beige;
+}
+
+.aboutme > :first-child {
+    margin-top: 0;
+}
+
+.row {
+    display:flex;
+}
+
+.column {
+    flex: 1;    
+}
+
+.leftcolumn {
+    color: whitesmoke;
+    background-image: url("img/self.jpg");
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 50vw auto;
+    border-color: beige;
+    border-width: 10px;
+    border-style: solid;
+    height: 100vh;
+}
+
+.rightcolumn {
+    padding: 1em;
+}
+
+.column li {
+    height: 10vh;
+    list-style: none;
+}
+
+.column ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.leftcolumn h2, .leftcolumn h3, .leftcolumn li {
+    margin: 0;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+}
+
+.leftcolumn h2 {
+    margin-top: 40vh;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.column li:nth-of-type(2n), .leftcolumn h3 {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+
+
