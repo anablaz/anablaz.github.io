@@ -138,5 +138,38 @@ body {
     background-color: rgba(255, 255, 255, 0.233);
 }
 
+.experience {
+    background-color: beige;
+    padding-left: 2em;
+    height: 40vh;
+}
 
+.experience > h2{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.experience > p {
+    display: inline-block;
+    padding-right: 10em;
+}
+
+.experience > p > i {
+    display: block;
+    font-size: 7rem;
+    padding-top: 0.3em;
+    color:rgba(0, 0, 0, 0.644)
+}
+
+.fa-product-hunt {
+    padding-left:0.6em;
+}
+
+.fa-quidditch {
+    padding-left:0.2em;
+}
+
+.fa-flask {
+    padding-left:1em;
+}
 
