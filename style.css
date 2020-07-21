@@ -5,7 +5,7 @@
 .landingpage {
     background-image: url("img/landing.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background-size: cover;
     height: 100vh;
     color: whitesmoke;
     padding-top: 25vh;
@@ -89,6 +89,7 @@ body {
 
 .row {
     display:flex;
+    flex-direction: column;
 }
 
 .column {
@@ -97,17 +98,25 @@ body {
 
 .leftcolumn {
     color: whitesmoke;
-    background-image: url("img/self.jpg");
     border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: 50vw auto;
     border-color: beige;
     border-width: 10px;
     border-style: solid;
-    height: 100vh;
+}
+
+.leftcolumn img {
+    max-width: 100%;
 }
 
 .rightcolumn {
+    padding: 1em;
+}
+
+.mybiodesktop {
+    display: none;
+}
+
+.mybiomobile {
     padding: 1em;
 }
 
@@ -117,11 +126,13 @@ body {
 }
 
 .column ul {
+    display: none;
     padding-left: 0;
     margin: 0;
 }
 
 .leftcolumn h2, .leftcolumn h3, .leftcolumn li {
+    display: none;
     margin: 0;
     padding: 1rem;
     backdrop-filter: blur(3px);
@@ -141,7 +152,6 @@ body {
 .experience {
     background-color: beige;
     padding-left: 2em;
-    height: 40vh;
 }
 
 .experience > h2{
@@ -173,3 +183,16 @@ body {
     padding-left:1em;
 }
 
+@media only screen and (min-width: 900px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .mybiodesktop {
+        display: block;
+    }
+
+    .mybiomobile {
+        display: none;
+    }
+}
