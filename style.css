@@ -11,6 +11,8 @@
     padding-top: 25vh;
     text-align: center;
     text-shadow: 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201;
+    font-size: 2vh;
+    position: relative;
 }
 
 body {
@@ -20,14 +22,14 @@ body {
 
 .title {
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: .25em;
 }
 
 .firstintro {
     text-shadow: 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201, 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201, 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .socialmedia {
@@ -37,7 +39,7 @@ body {
 .socialmedia li {
     display: inline-block;
     margin-top: 6vh;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .socialmedia li:not(:first-child) {
@@ -57,21 +59,21 @@ body {
 .downthepage {
     color: rgb(245, 232, 232);
     display: inline-block;
-    margin-top: 12vh;
+    position: absolute;
+    bottom: 0.6em;
+    left: 0;
+    right: 0;
     text-decoration: none;
-    padding: .4em;
-    padding-bottom: .1em;
-    padding-top: .2em;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .downthepage i {
     display: block;
-    transition: margin-top .1s ease-in-out;
+    transition: transform .1s ease-in-out;
 }
 
 .downthepage:hover i {
-    margin-top: 0.1em;
+    transform: translateY(0.1em);
 }
 
 
@@ -136,6 +138,8 @@ body {
     margin: 0;
     padding: 1rem;
     backdrop-filter: blur(3px);
+    text-shadow: 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201, 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201, 0px 0px 20px #050201, 0px 0px 10px #050201, 0px 0px 3px #050201;
+
 }
 
 .leftcolumn h2 {
@@ -194,5 +198,10 @@ body {
 
     .mybiomobile {
         display: none;
+    }
+
+    .landingpage {
+        padding-top: 25vh;
+        font-size: 2.45vh;
     }
 }
