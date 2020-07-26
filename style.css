@@ -224,6 +224,6 @@ body {
     }
 
     .competencies h2, .competencies h3, .competencies li {
-        padding: 1em 2.5vw;
+        padding: 1em 0 1em 2.5vw;
     }
 }
