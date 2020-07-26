@@ -155,7 +155,7 @@ body {
 
 .competencies h2, .competencies h3, .competencies li {
     margin: 0;
-    padding: 1em 4vw;
+    padding: 1em 0 1em 4vw;
 }
 
 .competencies h2 {
